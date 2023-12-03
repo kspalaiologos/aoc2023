@@ -4,14 +4,16 @@
 #include <string.h>
 #include <ctype.h>
 
-static int read_number(char data[140][142], int dy, int dx) {
+static char data[140][142];
+
+static int read_number(int dy, int dx) {
     if (dy < 0 || dy >= 140 || dx < 0 || dx >= 140) return 0;
     if (!isdigit(data[dy][dx])) return 0;
     while(isdigit(data[dy][dx]) && dx >= 0) dx--; dx++;
     return atoi(&data[dy][dx]);
 }
 
-static void p1(char data[140][142]) {
+static void p1() {
     int sum1 = 0, sum2 = 0;
     for (int y = 0; y < 140; y++) {
         for (int x = 0; x < 140; x++) {
@@ -19,7 +21,7 @@ static void p1(char data[140][142]) {
                 int mat[3][3] = { 0 };
                 for (int dy = y - 1; dy <= y + 1; dy++) {
                     for (int dx = x - 1; dx <= x + 1; dx++) {
-                        mat[dy - y + 1][dx - x + 1] = read_number(data, dy, dx);
+                        mat[dy - y + 1][dx - x + 1] = read_number(dy, dx);
                     }
                 }
                 int n = 0, p = 1;
@@ -37,7 +39,7 @@ static void p1(char data[140][142]) {
 
 int main(void) {
     FILE * input = fopen("input.txt", "r");
-    char data[140][142]; for(int i = 0; i < 140; i++) { fgets(data[i], 142, input); }
+    for(int i = 0; i < 140; i++) { fgets(data[i], 142, input); }
     fclose(input);
-    p1(data);
+    p1();
 }
