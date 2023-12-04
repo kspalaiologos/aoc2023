@@ -1,8 +1,5 @@
 # aoc2023
 
-https://git.palaiologos.rocks/Palaiologos/aoc2023
-https://github.com/kspalaiologos/aoc2023
-
 Feelings about problems 1 - 3:
 - Clearly written with imperative programming languages in mind.
 - Algorithms in each language are generally very different.

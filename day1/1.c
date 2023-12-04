@@ -1,63 +1,42 @@
 
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include "../a.h"
 
-// Part 1
-static int part1(char * line) {
-    // find first digit from the beginning of line
-    int first = 0;
-    while (!isdigit(line[first]) && line[first] != 0) first++;
-    int last = strlen(line);
-    while (!isdigit(line[last]) && last != 0) last--;
-    return 10 * (line[first] - '0') + (line[last] - '0');
+SI p1(C*z) {
+    I f=0,l=strlen(z);
+    W(!isdigit(z[f])&&z[f])f++;
+    W(!isdigit(z[l])&&l)l--;
+    R 10*(z[f]-'0')+(z[l]-'0'); }
+
+SI st(C*w,C*z) {W(*w)IF(*w!=*z,R 0)ELSE(w++,z++)R 1;}
+
+SI num(C*z) {
+    if(st("one",z))R 1;
+    if(st("two",z))R 2;
+    if(st("three",z))R 3;
+    if(st("four",z))R 4;
+    if(st("five",z))R 5;
+    if(st("six",z))R 6;
+    if(st("seven",z))R 7;
+    if(st("eight",z))R 8;
+    if(st("nine",z))R 9;
+    if(isdigit(*z))R*z-'0';
+    R-1; }
+
+SI p2(C*z) {
+    I f=-1,l=-1,d;
+    W(*z) {
+        d=num(z++);
+        IF(d!=-1,IF(f==-1,f=d)ELSE(l=d)) }
+    R 10*f+(l==-1?f:l);
 }
 
-// Part 2
-static int starts(char * word, char * line) {
-    while (*word != 0)
-        if (*word != *line) return 0; else word++, line++;
-    return 1;
-}
-
-static int number(char * line) {
-    if (starts("one", line)) return 1;
-    if (starts("two", line)) return 2;
-    if (starts("three", line)) return 3;
-    if (starts("four", line)) return 4;
-    if (starts("five", line)) return 5;
-    if (starts("six", line)) return 6;
-    if (starts("seven", line)) return 7;
-    if (starts("eight", line)) return 8;
-    if (starts("nine", line)) return 9;
-    if (isdigit(*line)) return *line - '0';
-    return -1;
-}
-
-static int part2(char * line) {
-    int first = -1, last = -1;
-    while (*line != 0) {
-        int num = number(line);
-        if (num != -1) {
-            if (first == -1) first = num;
-            else last = num;
-        }
-        line++;
-    }
-    if (last == -1) last = first;
-    return 10 * first + last;
-}
-
-int main(void) {
-    FILE * input = fopen("input.txt", "r");
-    int sum1 = 0, sum2 = 0;
-    while (!feof(input)) {
-        char buf[128] = { 0 }; fgets(buf, 128, input);
-        if (*buf == 0) continue;
-        sum1 += part1(buf);
-        sum2 += part2(buf);
-    }
-    fclose(input);
-    printf("%d\n%d\n", sum1, sum2);
+I main(V) {
+    FILE*in=fopen("input.txt","r");
+    I s1=0,s2=0;
+    W(!feof(in)) {
+        C buf[128]={0};fgets(buf,128,in);
+        IF(!*buf,continue)
+        s1+=p1(buf),s2+=p2(buf); }
+    printf("%d\n%d\n", s1, s2);
 }
 
