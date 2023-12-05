@@ -9,3 +9,7 @@ Feelings about problems 1 - 3:
 Problem 4:
 - The Haskell solution is simple and pretty, just like the C and APL ones.
 - The APL solution uses a matrix inversion trick. 
+
+Problem 5:
+- Haskell was the easiest one. I gave up on APL due to a RIDE bug.
+- C still pending.
