@@ -1,5 +1,10 @@
 # aoc2023
 
+A pit of experiments:
+- Trying out DyalogScript and in general APL for (imperative) AoC problems.
+- Trying out (elegant) Haskell.
+- Trying out the "Whitney C" programming style.
+
 Feelings about problems 1 - 3:
 - Clearly written with imperative programming languages in mind.
 - Algorithms in each language are generally very different.
@@ -11,5 +16,4 @@ Problem 4:
 - The APL solution uses a matrix inversion trick. 
 
 Problem 5:
-- Haskell was the easiest one. I gave up on APL due to a RIDE bug.
-- C still pending.
+- Haskell was the easiest one, C was soul crushing I gave up on APL due to a RIDE bug.
