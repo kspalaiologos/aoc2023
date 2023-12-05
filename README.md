@@ -1,9 +1,10 @@
 # aoc2023
 
 A pit of experiments:
-- Trying out DyalogScript and in general APL for (imperative) AoC problems.
-- Trying out (elegant) Haskell.
+- Trying out DyalogScript and in general *idiomatic* APL for (imperative) AoC problems.
+- Trying out *elegant* Haskell.
 - Trying out the "Whitney C" programming style.
+- Potentially trying out asm3bf to solve some problems in Brainfuck.
 
 Feelings about problems 1 - 3:
 - Clearly written with imperative programming languages in mind.
