@@ -10,6 +10,7 @@
 #include <stdlib.h>
 
 typedef int I;
+typedef long L;
 typedef void V;
 typedef char C;
 typedef double D;
