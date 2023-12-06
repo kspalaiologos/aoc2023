@@ -18,3 +18,6 @@ Problem 4:
 
 Problem 5:
 - Haskell was the easiest one, C was soul crushing I gave up on APL due to a RIDE bug.
+
+Problem 6:
+- Very easy compared to problem 5 in each langauge. C solution hardcodes inputs, since there's so little of them.
