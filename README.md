@@ -6,6 +6,8 @@ A pit of experiments:
 - Trying out the "Whitney C" programming style.
 - Potentially trying out asm3bf to solve some problems in Brainfuck.
 
+Of course, there are easier ways to solve the Advent Of Code. One of such ways is not using Brainfuck or deliberately obtuse C as your main programming tool. But exploring less familiar ideas or trying out less weildy tools for the job slightly increases the difficulty level, which makes the tasks more interesting than solving them in Java or Python.
+
 Feelings about problems 1 - 3:
 - Clearly written with imperative programming languages in mind.
 - Algorithms in each language are generally very different.
