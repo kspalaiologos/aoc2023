@@ -28,4 +28,4 @@ Problem 7:
 - Missing APL.
 
 Problem 8:
-- So far there is only a Haskell solution.
+- Missing APL.
