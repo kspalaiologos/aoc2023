@@ -8,24 +8,13 @@ A pit of experiments:
 
 Of course, there are easier ways to solve the Advent Of Code. One of such ways is not using Brainfuck or deliberately obtuse C as your main programming tool. But exploring less familiar ideas or trying out less weildy tools for the job slightly increases the difficulty level, which makes the tasks more interesting than solving them in Java or Python.
 
-Feelings about problems 1 - 3:
-- Clearly written with imperative programming languages in mind.
-- Algorithms in each language are generally very different.
-- Haskell took twice as long as APL to write, C took a little shorter than APL.
-- I approach every problem by starting with APL, then Haskell and finally C.\
-
-Problem 4:
-- The Haskell solution is simple and pretty, just like the C and APL ones.
-- The APL solution uses a matrix inversion trick. 
-
-Problem 5:
-- Haskell was the easiest one, C was soul crushing I gave up on APL due to a RIDE bug.
-
-Problem 6:
-- Very easy compared to problem 5 in each langauge. C solution hardcodes inputs, since there's so little of them.
-
-Problem 7:
-- Missing APL.
-
-Problem 8:
-- Missing APL.
+| Day | APL | Haskell | C |
+|-----|-----|---------|---|
+|  1  | 🟢  | 🟢      | 🟢|
+|  2  | 🟢  | 🟢      | 🟢|
+|  3  | 🟢  | 🟢      | 🟢|
+|  4  | 🟢  | 🟢      | 🟢|
+|  5  | 🟡  | 🟢      | 🟢|
+|  6  | 🟢  | 🟢      | 🟢|
+|  7  | 🔴  | 🟢      | 🟢|
+|  8  | 🟢  | 🟢      | 🟢|
