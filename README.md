@@ -23,3 +23,9 @@ Problem 5:
 
 Problem 6:
 - Very easy compared to problem 5 in each langauge. C solution hardcodes inputs, since there's so little of them.
+
+Problem 7:
+- Missing APL.
+
+Problem 8:
+- So far there is only a Haskell solution.
