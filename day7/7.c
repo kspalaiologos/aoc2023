@@ -1,5 +1,4 @@
 #include "../a.h"
-#define CAP 1024
 typedef struct{C c[5];I b,t;}H;
 I p=1;
 I val(C s){
@@ -23,7 +22,7 @@ void sh(H* h) {
     case 3:h->t=cm[1]==2?4:3;break;
     default:h->t=cm[0]+1;}}
 I solve(FILE* fp) {
-  H h[CAP];I hl=0,ans=0;
+  H h[1024];I hl=0,ans=0;
   W(fscanf(fp,"%s %d\n",h[hl].c,&h[hl].b)==2)sh(&h[hl++]);
   qsort(h,hl,16,cmp);Fi(hl,ans+=h[i].b*(i+1));R ans;}
 I main() {
