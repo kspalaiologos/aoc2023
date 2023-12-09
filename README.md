@@ -11,7 +11,7 @@ Of course, there are easier ways to solve the Advent Of Code. One of such ways i
 | Day | APL | Haskell | C | SUBLEQ |
 |-----|-----|---------|---|--------|
 |  1  | 🟢  | 🟢      | 🟢|   🟢   |
-|  2  | 🟢  | 🟢      | 🟢|   🔴   |
+|  2  | 🟢  | 🟢      | 🟢|   🟢   |
 |  3  | 🟢  | 🟢      | 🟢|   🔴   |
 |  4  | 🟢  | 🟢      | 🟢|   🔴   |
 |  5  | 🟡  | 🟢      | 🟢|   🔴   |
