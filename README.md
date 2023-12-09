@@ -18,3 +18,4 @@ Of course, there are easier ways to solve the Advent Of Code. One of such ways i
 |  6  | 🟢  | 🟢      | 🟢|
 |  7  | 🔴  | 🟢      | 🟢|
 |  8  | 🟢  | 🟢      | 🟢|
+|  9  | 🟢  | 🔴      | 🔴|
