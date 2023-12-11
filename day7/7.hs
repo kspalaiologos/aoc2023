@@ -19,7 +19,7 @@ value _ 'T' = 10
 value _ c = digitToInt c
 
 hist :: String -> [(Int, Char)]
-hist = sortBy (comparing Data.Ord.Down) . map (liftM2 (,) length head) . group . sortOn (value True)
+hist = sortOn Data.Ord.Down . map (liftM2 (,) length head) . group . sortOn (value True)
 
 classify :: Bool -> String -> [Int]
 classify False hand = map fst (hist hand)
