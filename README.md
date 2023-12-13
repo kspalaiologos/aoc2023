@@ -22,3 +22,4 @@ Of course, there are easier ways to solve the Advent Of Code. One of such ways i
 | 10  | 🔴  | 🔴      | 🟢|   🔴   |
 | 11  | 🟢  | 🟢      | 🟢|   🔴   |
 | 12  | 🔴  | 🟢      | 🟢|   🔴   |
+| 13  | 🔴  | 🟢      | 🔴|   🔴   |
