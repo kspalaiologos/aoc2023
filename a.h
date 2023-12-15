@@ -12,6 +12,8 @@
 typedef int I;
 typedef short T;
 typedef long L;
+typedef unsigned int UI;
+typedef unsigned long UL;
 typedef void V;
 typedef char C;
 typedef double D;
