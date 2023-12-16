@@ -25,3 +25,5 @@ Of course, there are easier ways to solve the Advent Of Code. One of such ways i
 | 13  | 🔴  | 🟢      | 🔴|   🔴   |
 | 14  | 🔴  | 🟢      | 🔴|   🔴   |
 | 15  | 🔴  | 🔴      | 🟢|   🔴   |
+
+Bottom line: I got bored of AoC so I will not be polishing my solutions and putting them here anymore. I will compete, though.
